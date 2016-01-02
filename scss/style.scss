@@ -1,0 +1,35 @@
+@import '../partials/mixins';
+@import '../partials/layout';
+@import '../partials/variables';
+
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	margin:0;
+	padding:0;
+}
+
+
+
+header {
+    width:100%;
+	background: $color-white;
+	position: fixed;
+	height: 80px;
+	box-shadow: inset 0px -1px 0px 0px $color-black;
+	
+	@include MQ(M) {
+//		height:82px;
+	}
+}
+
+.image-tip {
+	width: 180px;
+	height: 130px;
+	background: $color-black;
+	float: left;
+	margin-right: 20px;
+}
